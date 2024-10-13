@@ -43,6 +43,7 @@ p {
 
 .header,
 .main-container,
+.games-container,
 .footer-container {
   width: 100%;
   max-width: 1920px;
@@ -99,7 +100,6 @@ p {
   border: 1px solid transparent;
   margin: 7px 0;
 }
-
 .burger-btn:focus {
   outline-width: 0;
 }
@@ -190,7 +190,8 @@ p {
     margin-top: 40px;
   }
 }
-.see-more {
+.see-more,
+.details{
   display: flex;
   align-items: center;
   column-gap: 15px;
@@ -212,7 +213,7 @@ p {
   z-index: 3;
   display: flex;
   column-gap: clamp(1.25rem, -15.5208rem + 22.3611vw, 11.3125rem);
-  padding-right: 46px;
+  padding-right: clamp(0.625rem, -1.9464rem + 4.0179vw, 2.875rem);
   div{
     img{
       max-width: 442px;
@@ -295,3 +296,73 @@ p {
   column-gap: 15px;
 }
 /* footer */
+ 
+
+
+/* games */
+
+
+.games-container{
+  background: #FAFAFA;
+  position: relative;
+  padding: 0 0 0 clamp(1.25rem, -5.4167rem + 8.8889vw, 5.25rem);
+}
+.games-list{
+  display: flex;
+  flex-direction: column;
+  row-gap: 143px;
+}
+.game-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 50px;
+
+}
+.game-item:nth-child(4){
+  h1{
+    word-break: break-all;
+  }
+}
+.game-item.default{
+  padding: 0 calc(clamp(0.625rem, -2.875rem + 5.4688vw, 3.6875rem) + 71px + clamp(0.625rem, -1.9464rem + 4.0179vw, 2.875rem)) 0 calc(clamp(1.25rem, -3.6458rem + 6.5278vw, 4.1875rem) + 32px) ;
+}
+.game-item-info{
+  flex: 1;
+  max-width: 695px;
+  width: 43vw;
+  h1{
+    margin-bottom: 30px;
+  }
+  p+p{
+    margin-top: 40px;
+  }
+}
+.details{
+  flex-direction: column;
+  font-size: 20px;
+}
+.game-icon-container{
+  flex: 1;
+  img{
+    width: 100%;
+    max-width: 695px;
+  }
+}
+.game-icon.right{
+  text-align: right;
+}
+.slider-container.games{
+  align-items: baseline;
+  position: absolute;
+  top: 320px;
+  right: clamp(0.625rem, -1.9464rem + 4.0179vw, 2.875rem);
+}
+.more-projects{
+  margin: 50px 0 20px calc(clamp(1.25rem, -3.6458rem + 6.5278vw, 4.1875rem) + 32px);
+}
+.our-contacts-list.games-contacts-list{
+  position: absolute;
+  top: 175px;
+}
+/* games */
