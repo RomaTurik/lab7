@@ -3,12 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css" />
     <title>Document</title>
   </head>
   <body>
     <header class="header">
+      <div class="drawer">
+        <a href="#">Главная</a><a href="#">Компания</a><a href="#">Игры</a
+        ><a href="#">Карьера</a><a href="#">Новости</a><a href="#">Контакты</a>
+      </div>
       <div class="container-logo">
+        <button class="burger-btn">
+          <span class="bar-top"></span>
+          <span class="bar-mid"></span>
+          <span class="bar-bot"></span>
+        </button>
         <img src="./images/logo1.png" alt="" />
       </div>
       <div class="nav-container">
@@ -23,9 +34,10 @@
         <button class="lang-switcher">ENG</button>
       </div>
     </header>
+
     <main class="main-container">
       <section class="about-us">
-        <div class="our-contacts-list">
+        <div class="our-contacts-list main-contacts-list">
           <img src="./images/Pintrest.png" alt="" />
           <img src="./images/Behance.png" alt="" />
           <img src="./images/Dribbble.png" alt="" />
@@ -46,17 +58,22 @@
             одновременно. Мы постоянно экспериментируем, ищем новые тренды и
             пробуем себя в новых жанрах.
           </p>
-          <button class="see-more">
+          <button class="see-more big">
             <p>Смотреть наши работы</p>
             <img src="./images/Arrow3.png" alt="" />
           </button>
         </article>
       </section>
       <div class="purple-background"></div>
+      <div class="grey-background"></div>
       <div class="about-us-img-container">
         <div>
           <img src="./images/chel.png" alt="" />
         </div>
+        <button class="see-more small">
+          <p>Смотреть наши работы</p>
+          <img src="./images/Arrow3.png" alt="" />
+        </button>
         <div class="slider-container">
           <p>наши работы</p>
           <div class="slider-list">
@@ -94,3 +111,21 @@
     </footer>
   </body>
 </html>
+
+<script>
+  (function () {
+    var toggle = document.querySelector(".burger-btn");
+    var drawer = document.querySelector(".drawer");
+    $(".drawer").hide();
+
+    toggle.addEventListener("click", function (e) {
+      this.classList.toggle("opened");
+
+      if ($(".burger-btn").hasClass("opened")) {
+        $(".drawer").show(300);
+      } else {
+        $(".drawer").hide(300);
+      }
+    });
+  })();
+</script>
