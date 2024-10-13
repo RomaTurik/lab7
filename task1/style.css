@@ -1,0 +1,82 @@
+@font-face {
+  font-family: "Hauora";
+  src: url("./fonts/Hauora-Regular.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Hauora";
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+main,
+.header-nav {
+  max-width: 1024px;
+  margin: auto;
+}
+
+/* header */
+header {
+  height: 60px;
+  background: #fae79c;
+  color: #222220;
+}
+
+.header-nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-nav-list {
+  width: 100%;
+  max-width: 470px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* header */
+
+/* main container */
+.main-container {
+  padding: 0 0 20px 0;
+}
+section {
+  padding: 0 20px;
+  img {
+    object-fit: cover;
+    object-position: 50% 50%;
+    width: 100%;
+    height: 400px;
+  }
+  h1 {
+    margin: 20px 0;
+  }
+}
+
+/* main container */
+
+/* img container */
+
+.mountains-container-list {
+  margin-top: 40px;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+.mountains-item {
+  flex-basis: 31.3%;
+  display: block;
+  img {
+    width: 100%;
+  }
+}
+
+/* img container */

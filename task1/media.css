@@ -1,0 +1,26 @@
+@media (max-width: 1024px) {
+  .mountains-item {
+    flex-basis: 48%;
+  }
+}
+
+@media (max-width: 768px) {
+  .mountains-container-list {
+    gap: 5px;
+  }
+  .mountains-item {
+    flex-basis: 49%;
+  }
+
+  header {
+    font-size: 14px;
+  }
+  .header-nav {
+    padding: 0 25px;
+  }
+}
+@media (max-width: 425px) {
+  .mountains-item {
+    flex-basis: 100%;
+  }
+}
