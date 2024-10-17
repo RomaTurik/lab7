@@ -200,17 +200,75 @@
       </button>
     </div>
     <div class="swiper-container">
+      <h1>Last project</h1>
       <div class="swiper">
         <div class="swiper-wrapper">
-          <div class="swiper-slide">Slide 1</div>
-          <div class="swiper-slide">Slide 2</div>
-          <div class="swiper-slide">Slide 3</div>
-          <div class="swiper-slide">Slide 3</div>
+          <div class="swiper-slide">
+            <img src="./images/game4.png" alt="" />
+            <h2>Hitmasters</h2>
+            <p>Стань стрелком и срази всех врагов!</p>
+            <p>
+              Целься метко, используй объекты на уровнях и не дай никому
+              спастись! Открывай новое оружие, пополняй свой арсенал и проходи
+              головоломки.
+            </p>
+            <button class="details">
+              <p>Смотреть наши работы</p>
+              <img src="./images/Arrow1.png" alt="" />
+            </button>
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/game4.png" alt="" />
+            <h2>Hitmasters</h2>
+            <p>
+              Escape Masters Совершите идеальный побег! Спаси напарников, собери
+              сокровища и прокопай путь к свободе, но опасайся ловушек.
+            </p>
+            <button class="details">
+              <p>Смотреть наши работы</p>
+              <img src="./images/Arrow1.png" alt="" />
+            </button>
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/game4.png" alt="" />
+            <h2>Hitmasters</h2>
+            <p>Стань стрелком и срази всех врагов!</p>
+            <p>
+              Целься метко, используй объекты на уровнях и не дай никому
+              спастись! Открывай новое оружие, пополняй свой арсенал и проходи
+              головоломки.
+            </p>
+            <button class="details">
+              <p>Смотреть наши работы</p>
+              <img src="./images/Arrow1.png" alt="" />
+            </button>
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/game4.png" alt="" />
+            <h2></h2>
+            <p>Стань стрелком и срази всех врагов!</p>
+            <p>
+              Целься метко, используй объекты на уровнях и не дай никому
+              спастись! Открывай новое оружие, пополняй свой арсенал и проходи
+              головоломки.
+            </p>
+            <button class="details">
+              <p>Смотреть наши работы</p>
+              <img src="./images/Arrow1.png" alt="" />
+            </button>
+          </div>
         </div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+      </div>
+      <div class="swiper-footer">
+        <div class="swiper-button-prev-container">
+          <div class="swiper-button-prev"></div>
+        </div>
+        <div class="swiper-button-next-container">
+          <div class="swiper-button-next"></div>
+        </div>
       </div>
     </div>
+
     <footer class="footer">
       <div class="footer-container">
         <div>
@@ -258,8 +316,8 @@
 </script>
 <script>
   const swiper = new Swiper(".swiper", {
-    direction: "vertical",
-    loop: true,
+    slidesPerView: 3,
+    spaceBetween: 160,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",

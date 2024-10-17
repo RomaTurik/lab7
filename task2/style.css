@@ -7,6 +7,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow-x: hidden;
 }
 html {
   overflow-x: hidden;
@@ -27,11 +28,16 @@ button {
 button {
   border: none;
 }
-h1 {
+h1,h2{
   font-family: "ZonaPro";
   font-weight: 800;
-  font-size: 72px;
   text-transform: uppercase;
+}
+h1 {
+  font-size: 72px;
+}
+h2{
+  font-size: 44px;
 }
 a {
   color: inherit;
@@ -366,3 +372,105 @@ p {
   top: 175px;
 }
 /* games */
+
+/* swiper */
+.swiper-container{
+  position: relative; 
+  margin: 0 auto;
+  max-width: 1920px;
+  padding: 0 calc(clamp(0.625rem, -2.875rem + 5.4688vw, 3.6875rem) + 71px + clamp(0.625rem, -1.9464rem + 4.0179vw, 2.875rem)) 0  calc(clamp(1.25rem, -3.6458rem + 6.5278vw, 4.1875rem) + 32px + clamp(1.25rem, -5.4167rem + 8.8889vw, 5.25rem));
+  h1{
+    margin: 142px 0 62px 0;
+  }
+}
+.swiper{
+  max-width: 1920px;
+  width: 100%;
+} 
+.swiper-wrapper{
+  
+  width: 85vw;
+}
+.swiper-slide{
+  align-items: center;
+  img{
+    width: 100%;
+
+  }
+  h2{
+    margin: 25px 0 40px 0;
+  }
+  p+p{
+    margin-top: 20px;
+  }
+  
+}
+.swiper-footer {
+  position: absolute;
+    width: 200px;
+    top: 160px;
+    right: calc(clamp(0.625rem, -2.875rem + 5.4688vw, 3.6875rem) + 71px + clamp(0.625rem, -1.9464rem + 4.0179vw, 2.875rem));
+    display: flex;
+    column-gap: 80px;
+}
+.swiper-button-prev:after {
+  content: "" !important;
+  background-image: url("./images/mini-arrow2.svg") !important;
+  rotate: 180deg;
+  display: block !important;
+  width: 16px;
+  height: 14px;
+}
+
+.swiper-button-next:after {
+  content: "" !important;
+  background-image: url("./images/mini-arrow2.svg") !important;
+  display: block !important;
+  width: 16px;
+  height: 14px;
+}
+
+.swiper-button-prev-container,
+.swiper-button-next-container {
+  position: relative;
+  background: #ce0002;
+  width: 60px;
+  height: 60px;
+}
+.swiper-button-next{
+  top: 23px !important;
+  right: 0 !important;
+}
+.swiper-button-prev{
+  top: 23px !important;
+  left: 0 !important;
+}
+.swiper-button-next,
+.swiper-button-prev{
+  width: 60px !important;
+  height: 60px !important;
+}
+.swiper-button-next-container:has(.swiper-button-disabled){
+  .swiper-button-next:after{
+    content: "" !important;
+    background-image: url("./images/mini-arrow.svg") !important;
+    rotate: 180deg;
+    display: block !important;
+    width: 16px;
+    height: 14px;
+  }
+    background: #EFEFEF;
+}
+.swiper-button-prev-container:has(.swiper-button-disabled){
+  .swiper-button-prev:after{
+    content: "" !important;
+    background-image: url("./images/mini-arrow.svg") !important;
+    display: block !important;
+    width: 16px;
+    height: 14px; 
+    rotate: 360deg;
+  }
+    background: #EFEFEF;
+}
+
+/* swiper */
