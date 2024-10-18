@@ -15,11 +15,43 @@
     <title>Document</title>
   </head>
   <body>
-    <header class="header">
+    <div class="dark-background"></div>
+    <div class="modal-window-container">
+      <button class="close-modal-btn" onclick="func()">
+        <img src="./images/cross.png" alt="" />
+      </button>
+      <div class="modal-info-container">
+        <h1>Design Masters</h1>
+
+        <p>Станьте дизайнером интерьеров!</p>
+        <p>
+          Проходите уровни матч-3, создавайте собственные дизайны и интерьеры,
+          следите за историей и знакомьтесь с персонажами.Станьте дизайнером
+          интерьеров!
+        </p>
+        <p>
+          Проходите уровни матч-3, создавайте собственные дизайны и интерьеры,
+          следите за историей и знакомьтесь с персонажами.
+        </p>
+      </div>
+      <div class="modal-img-container">
+        <img src="./images/large-game1.png" alt="">
+        <div class="markets-container">
+          <a href="">
+            <img src="./images/google.png" alt="">
+          </a>
+          <a href="">
+            <img src="./images/apple.png" alt="">
+          </a>
+        </div>
+      </div>
+      
+    </div>
+    <header class="header" id="header">
       <div class="drawer">
         <a href="#">Главная</a><a href="#">Компания</a><a href="#">Игры</a
         ><a href="#">Карьера</a><a href="#">Новости</a><a href="#">Контакты</a>
-      </div>
+      </div
       <div class="container-logo">
         <button class="burger-btn">
           <span class="bar-top"></span>
@@ -64,10 +96,10 @@
             одновременно. Мы постоянно экспериментируем, ищем новые тренды и
             пробуем себя в новых жанрах.
           </p>
-          <button class="see-more big">
+          <a href="#games" class="see-more big">
             <p>Смотреть наши работы</p>
             <img src="./images/Arrow3.png" alt="" />
-          </button>
+          </a>
         </article>
       </section>
       <div class="purple-background"></div>
@@ -76,10 +108,10 @@
         <div>
           <img src="./images/chel.png" alt="" />
         </div>
-        <button class="see-more small">
+      <button class="see-more small">
           <p>Смотреть наши работы</p>
           <img src="./images/Arrow3.png" alt="" />
-        </button>
+      </button>
         <div class="slider-container">
           <p>наши работы</p>
           <div class="slider-list">
@@ -90,7 +122,7 @@
         </div>
       </div>
     </main>
-    <div class="games-container">
+    <div class="games-container" id="games">
       <div class="our-contacts-list games-contacts-list">
         <img src="./images/Pintrest.png" alt="" />
         <img src="./images/Behance.png" alt="" />
@@ -117,7 +149,7 @@
                 Проходите уровни матч-3, создавайте собственные дизайны и
                 интерьеры, следите за историей и знакомьтесь с персонажами.
               </p>
-              <button class="details">
+              <button class="details" onclick="func()">
                 Подробнее
                 <img src="./images/Arrow1.png" alt="" />
               </button>
@@ -143,7 +175,7 @@
                 Выбирайте кисти, цвета и оттенки губной помады, подводки для
                 глаз и пудры, чтобы добиться превосходного результата.
               </p>
-              <button class="details">
+              <button class="details" onclick="func()">
                 Подробнее
                 <img src="./images/Arrow1.png" alt="" />
               </button>
@@ -159,7 +191,7 @@
                 Спаси напарников, собери сокровища и прокопай путь к свободе, но
                 опасайся ловушек.
               </p>
-              <button class="details">
+              <button class="details" onclick="func()">
                 Подробнее
                 <img src="./images/Arrow1.png" alt="" />
               </button>
@@ -186,7 +218,7 @@
                 спастись! Открывай новое оружие, пополняй свой арсенал и проходи
                 головоломки.
               </p>
-              <button class="details">
+              <button class="details" onclick="func()">
                 Подробнее
                 <img src="./images/Arrow1.png" alt="" />
               </button>
@@ -212,8 +244,8 @@
               спастись! Открывай новое оружие, пополняй свой арсенал и проходи
               головоломки.
             </p>
-            <button class="details">
-              <p>Смотреть наши работы</p>
+            <button class="details" onclick="func()">
+              <p>Подробнее</p>
               <img src="./images/Arrow1.png" alt="" />
             </button>
           </div>
@@ -224,8 +256,8 @@
               Escape Masters Совершите идеальный побег! Спаси напарников, собери
               сокровища и прокопай путь к свободе, но опасайся ловушек.
             </p>
-            <button class="details">
-              <p>Смотреть наши работы</p>
+            <button class="details" onclick="func()">
+              <p>Подробнее</p>
               <img src="./images/Arrow1.png" alt="" />
             </button>
           </div>
@@ -238,22 +270,22 @@
               спастись! Открывай новое оружие, пополняй свой арсенал и проходи
               головоломки.
             </p>
-            <button class="details">
-              <p>Смотреть наши работы</p>
+            <button class="details" onclick="func()">
+              <p>Подробнее</p>
               <img src="./images/Arrow1.png" alt="" />
             </button>
           </div>
           <div class="swiper-slide">
             <img src="./images/game4.png" alt="" />
-            <h2></h2>
+            <h2>Hitmasters</h2>
             <p>Стань стрелком и срази всех врагов!</p>
             <p>
               Целься метко, используй объекты на уровнях и не дай никому
               спастись! Открывай новое оружие, пополняй свой арсенал и проходи
               головоломки.
             </p>
-            <button class="details">
-              <p>Смотреть наши работы</p>
+            <button class="details" onclick="func()">
+              <p>Подробнее</p>
               <img src="./images/Arrow1.png" alt="" />
             </button>
           </div>
@@ -267,6 +299,10 @@
           <div class="swiper-button-next"></div>
         </div>
       </div>
+      <a class="button-up" href="#header">
+        <img src="./images/mini-arrow2.svg" alt="" />
+        <p>Вверх</p>
+      </a>
     </div>
 
     <footer class="footer">
@@ -318,9 +354,41 @@
   const swiper = new Swiper(".swiper", {
     slidesPerView: 3,
     spaceBetween: 160,
+    breakpoints: {
+      // when window width is >= 480px
+      200: {
+        slidesPerView: 1,
+      },
+      480: {
+        slidesPerView: 2,
+        spaceBetween: 50,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 160,
+      },
+      // when window width is >= 640px
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 40,
+      },
+      1224: {
+        spaceBetween: 80,
+      },
+      1440: {
+        spaceBetween: 160,
+      },
+    },
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
   });
+</script>
+
+<script>
+  function func(){
+    $('.modal-window-container').toggleClass('active')
+    $('.dark-background').toggleClass('active')
+  }
 </script>
